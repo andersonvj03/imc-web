@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+    font-family: 'Martian Mono', monospace;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    width: 10rem;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+.img img{
+    width: 100%;
+}
+.header-nav{
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-nav__li{
+    list-style: none;
+    border-radius: .3rem;
+}
+.header-nav__li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+   
+}
+.header-nav__li a:hover{
+    color: lightcoral;
+}
+
+.initial-page{
+    max-width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.initial-page__welcome h1{
+    width: 40rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.initial-page__welcome p{
+    width: 40rem;
+    font-size: 1.5rem;
+}
+.initial-page__welcome a{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    background: lightcoral;
+    margin-top: 1rem;
+    border-radius: .3rem;
+}
+.info-imc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(225, 225, 225);
+    padding: 5rem;
+}
+.info-imc__info h1{
+    width: 50rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.info-imc__info p{
+    width: 50rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
