@@ -17,23 +17,25 @@
 <body>
     <header>
         <figure class="img">
-            <img src="../img/undraw_pic_profile_re_7g2h.svg" alt="Read">
+            <img src="../img/Layer_Flat.svg" alt="Read">
         </figure>
+        <div class="toggle"><img src="../img/Layer_Flat.svg" alt="menu" id="menu"></div>
         <nav>
             <ul class="header-nav">
-                <li class="header-nav__li"><a href="#">Inicio</a></li>
-                <li class="header-nav__li"><a href="#">Acerca</a></li>
-                <li class="header-nav__li"><a href="#">Calculadora</a></li>
-                <li class="header-nav__li"><a href="#">Contacto</a></li>
+                <li class="header-nav__li"><a href="#inicio">Inicio</a></li>
+                <li class="header-nav__li"><a href="#acerca">Acerca</a></li>
+                <li class="header-nav__li"><a href="#calculadora">Calculadora</a></li>
+                <li class="header-nav__li"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        
     </header>
     <main class="container">
         <div class="initial-page">
             <div class="initial-page__welcome">
-                <h1>Indice de Masa Corporal.</h1>
+                <h1 id="inicio">Indice de Masa Corporal.</h1>
                 <p>Controla tu Indice de Masa Corporal, ¡Cuida tu Salud!.</p>
-                <a href="#">Controlar</a>
+                <a href="#calculadora">Controlar</a>
             </div>
             <div class="initial-page__img">
                 <img src="../img/undraw_family_vg76.svg" alt="familia">
@@ -43,19 +45,80 @@
             <div class="info-imc__img">
                 <img src="../img/undraw_appreciate_it_re_yc8h.svg" alt="apreciate">
             </div>
-          
+
             <div class="info-imc__info">
-                <h1>¿Qué es el IMC?</h1>
+                <h1 id="acerca">¿Qué es el IMC?</h1>
                 <p>El índice de masa corporal (IMC) es un número que se utiliza para medir el estado nutricional de una
-                    persona y determinar si tiene un peso saludable o no. Se calcula dividiendo el peso de una persona (en
-                    kilogramos) entre su estatura al cuadrado (en metros). La interpretación del IMC se hace comparando el
-                    resultado obtenido con una tabla de referencia que clasifica el IMC en diferentes categorías: bajo peso,
+                    persona y determinar si tiene un peso saludable o no. Se calcula dividiendo el peso de una persona
+                    (en
+                    kilogramos) entre su estatura al cuadrado (en metros). La interpretación del IMC se hace comparando
+                    el
+                    resultado obtenido con una tabla de referencia que clasifica el IMC en diferentes categorías: bajo
+                    peso,
                     peso normal, sobrepeso u obesidad. Sin embargo, el IMC solo proporciona una estimación general y no
                     tiene en cuenta factores individuales como la composición corporal, por lo que puede ser necesario
                     complementar su interpretación con otros exámenes médicos.</p>
-            </div>   
+            </div>
+        </div>
+        <div class="calculadora">
+            <div class="calculador" id="padre">
+                <h1 id="calculadora">Calculadora de IMC.</h1>
+                <input type="number" placeholder="Peso en Kilogramos." id="peso">
+                <input type="number" placeholder="Estatura en Metros." id="altura">
+                <input type="button" value="Calcular" class="boton" id="calcular">
+            </div>
+            <div class="tabla" id="tb">
+                <table>
+                    <thead>
+                        <td>Tabla de Referencia IMC</td>
+                        <td>Intervalos</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bajo Peso</td>
+                            <td>
+                                < 18.5 </td>
+                        </tr>
+                        <tr>
+                            <td>Peso Normal</td>
+                            <td> 18.5 - 24.9 </td>
+                        </tr>
+                        <tr>
+                            <td>Sobrepeso</td>
+                            <td>
+                                < 25 - 29.9 </td>
+                        </tr>
+                        <tr>
+                            <td>Obesidad</td>
+                            <td> 30 > </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
+    <footer class="foot">
+        <h2 id="contacto">Contacto</h2>
+        <ul>
+            <li><img src="../img/facebook.png" alt="Facebook"></li>
+            <li><img src="../img/whatsapp.png" alt="Whatsapp"></li>
+            <li><img src="../img/gorjeo.png" alt="Twitter"></li>
+        </ul>
+        <label for="#">IMC | Masa Corporal 2023 &copy;</label>
+        <div class="atribucion">
+            <h3>Atribuciones</h3>
+            <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos">Facebook iconos creados por
+                Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.es/iconos-gratis/whatsapp" title="whatsapp iconos">Whatsapp iconos creados por
+                Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.es/iconos-gratis/insignia-social-de-twitter"
+                title="insignia social de twitter iconos">Insignia social de twitter iconos creados por riajulislam -
+                Flaticon</a>
+        </div>
+
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/calcular.js"></script>
 </body>
 
 </html>
